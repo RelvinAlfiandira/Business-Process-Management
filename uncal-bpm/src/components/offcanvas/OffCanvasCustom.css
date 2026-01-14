@@ -1,0 +1,20 @@
+/* ================= OFFCANVAS ================== */
+.offcanvas-dark {
+  background-color: #1f1f1f;
+  padding-left: 10px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.offcanvas-dark .offcanvas-header {
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.offcanvas-dark .offcanvas-title {
+  color: white;
+  font-weight: bold;
+}
+
+.toggle-add-folder{
+  color: #c68d53;
+}

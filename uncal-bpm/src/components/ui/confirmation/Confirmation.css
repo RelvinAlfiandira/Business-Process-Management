@@ -1,0 +1,120 @@
+/* === Scoped hanya untuk Confirmation Modal === */
+.confirm-modal .modal-content {
+  background: #1f1f1f;
+  color: #f4f4f4;
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.3); /* gold accent */
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.6);
+  animation: confirmFadeIn 0.25s ease-out;
+}
+
+/* Header */
+.confirm-modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 14px 18px;
+  margin-bottom: 10px;
+}
+.confirm-modal .modal-header h5 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f1c40f; /* gold tone */
+}
+
+/* Body */
+.confirm-modal .modal-body {
+  padding: 18px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ddd;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* jarak antar message & children */
+}
+
+.confirm-modal .modal-body p.confirm-message {
+  margin: 0;
+  color: #e0e0e0;
+}
+
+.confirm-modal .modal-body .confirm-children {
+  margin-top: 4px;
+}
+
+/* Footer */
+.confirm-modal .modal-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 12px 18px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.confirm-modal .modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Label form */
+.confirm-modal .form-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f1c40f; /* gold tone */
+  margin-bottom: 6px;
+}
+
+/* Form input */
+.confirm-modal .form-control {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #f4f4f4;
+  font-size: 14px;
+  padding: 10px;
+  transition: all 0.2s ease;
+}
+.confirm-modal .form-control:focus {
+  border-color: #f1c40f;
+  box-shadow: 0 0 6px rgba(241, 196, 15, 0.4);
+  outline: none;
+}
+
+/* Select dropdown */
+.confirm-modal .form-select {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #f4f4f4;
+  font-size: 14px;
+  padding: 10px;
+  transition: all 0.2s ease;
+}
+.confirm-modal .form-select:focus {
+  border-color: #f1c40f;
+  box-shadow: 0 0 6px rgba(241, 196, 15, 0.4);
+  outline: none;
+}
+
+/* Info file terpilih */
+.confirm-modal .modal-body strong {
+  color: #f1c40f;
+}
+
+
+
+
+/* Animasi */
+@keyframes confirmFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

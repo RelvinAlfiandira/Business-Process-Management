@@ -1,0 +1,45 @@
+.bg-darkmode {
+  background:  #1a1a1a;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2); 
+}
+
+.bg-darkmode .navbar{
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  min-height:30px;
+}
+
+.bg-darkmode .nav-link,
+.bg-darkmode .dropdown-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.bg-darkmode .navbar-brand{
+  color: white;
+  font-size: medium;
+}
+
+.bg-darkmode ,
+.bg-darkmode .nav-link,
+.bg-darkmode .dropdown-item {
+    
+  color: #c68d53 !important; 
+  transition: all 0.3s ease;
+}
+
+.bg-darkmode .nav-link:hover,
+.bg-darkmode .dropdown-item:hover {
+  color: #ffcc66 !important; 
+  text-shadow: 0 0 6px rgba(255, 204, 102, 0.8);
+}
+
+.bg-darkmode .dropdown-menu {
+  background: #1f1f1f;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.bg-darkmode .dropdown-item:hover {
+  background-color: rgba(255, 204, 102, 0.1);
+}
+

@@ -1,0 +1,207 @@
+.palette {
+  width: 300px;
+  background: #1e1e1e;
+  height: 100%;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #2a2a2a;
+}
+
+/* Header Palette */
+.palette-header {
+  padding: 7px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f5f5f5;
+  border-bottom: 1px solid #5c5c5c;
+  background: #1c1c1c;
+  display: flex;
+  align-items: center;
+}
+
+/* Tabs */
+.palette-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px 12px;
+}
+
+.palette-header-icon {
+  width: 30px;
+  /* kecil aja biar konsisten */
+  height: 30px;
+  margin-right: 8px;
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 6px 10px;
+  background: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.tab-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.tab-btn.active {
+  color: #f5f5f5;
+  font-weight: 600;
+  border-color: #d4af37;
+}
+
+.tab-btn:hover {
+  background: #2a2a2a;
+  color: #f5f5f5;
+}
+
+/* Body */
+.palette-body {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Item */
+.palette-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #1e1e1e;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #f5f5f5;
+  font-size: 14px;
+  cursor: grab;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.palette-item:hover {
+  border-color: #d4af37;
+  background: #222;
+  transform: translateX(2px);
+}
+
+/* Ikon agar kecil dan konsisten */
+.palette-item img,
+.palette-item svg {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* Add Module */
+.add-module {
+  background: #262626;
+  color: #c68d53;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.add-module:hover {
+  background: #333;
+  border-color: #d4af37;
+}
+
+/* 🆕 Gaya untuk menu konteks */
+.context-menu {
+  position: absolute;
+  z-index: 1000;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 5px 0;
+  min-width: 150px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.context-menu span {
+  display: block;
+  padding: 8px 12px;
+}
+
+.context-menu span:hover {
+  background-color: #555;
+}
+
+/* 🆕 Gaya untuk modal konfirmasi */
+.confirmation-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.confirmation-modal {
+  background: #222;
+  color: #f5f5f5;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  width: 350px;
+  text-align: center;
+}
+
+.confirmation-modal p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.confirmation-actions button {
+  padding: 8px 16px;
+  margin: 0 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.btn-confirm {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-confirm:hover {
+  background-color: #c82333;
+}
+
+.btn-cancel {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-cancel:hover {
+  background-color: #5a6268;
+}

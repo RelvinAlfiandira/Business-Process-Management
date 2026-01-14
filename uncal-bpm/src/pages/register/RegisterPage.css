@@ -1,0 +1,186 @@
+/* Container utama dengan background */
+.register-container {
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+/* Wrapper untuk register card di kiri */
+.register-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Card register di sebelah kiri */
+.register-card {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(15px) saturate(150%);
+  -webkit-backdrop-filter: blur(15px) saturate(150%);
+  padding: 4rem;
+  width: 50%;
+  height: 100vh;
+  text-align: center;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Judul */
+.register-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #c68d53;
+  margin-bottom: 0.5rem;
+  background-clip: text;
+  line-height: 1.3;
+  padding-bottom: 0.2rem;
+}
+
+.register-subtitle {
+  font-size: 1rem;
+  color: #cfcfcf;
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+}
+
+/* Form */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Input */
+.register-input {
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #2c2c2c;
+  background: rgba(17, 17, 17, 0.8);
+  color: #e5e5e5;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.register-input:focus {
+  border-color: #d4af37;
+  outline: none;
+  background: rgba(24, 24, 24, 0.9);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+.register-input::placeholder {
+  color: #888;
+}
+
+/* Button */
+.register-button {
+  padding: 1rem;
+  background: linear-gradient(135deg, #d4af37, #c5a15e);
+  border: none;
+  border-radius: 10px;
+  color: #111;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.register-button:hover {
+  background: linear-gradient(135deg, #c5a15e, #d4af37);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+.register-button:active {
+  transform: translateY(0);
+}
+
+/* Footer */
+.register-footer {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #cfcfcf;
+}
+
+.register-footer a {
+  color: #d4af37;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register-footer a:hover {
+  color: #e6c66d;
+  text-decoration: underline;
+}
+
+/* Right Content Area */
+.register-right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  text-align: center;
+  color: white;
+}
+
+.register-right-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #c68d53;
+  line-height: 1.3;
+  padding-bottom: 0.2rem;
+}
+
+.register-right-text {
+  font-size: 1.3rem;
+  color: #e5e5e5;
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .register-card {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    border-right: none;
+    padding: 3rem 2rem;
+  }
+  
+  .register-right-content {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-card {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+  
+  .register-title {
+    font-size: 1.7rem;
+  }
+}

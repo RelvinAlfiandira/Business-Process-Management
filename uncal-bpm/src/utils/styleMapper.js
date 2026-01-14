@@ -1,0 +1,67 @@
+export const styleMapper = (tokens) => ({
+  inputStyle: {
+    background: tokens.input?.background,
+    color: tokens.input?.color,
+    border: `1px solid ${tokens.input?.borderColor}`,
+    borderRadius: tokens.input?.borderRadius,
+    padding: tokens.input?.padding,
+    width: "100%",
+    boxSizing: "border-box",
+  },
+  labelStyle: {
+    color: tokens.label?.color,
+    fontSize: tokens.label?.fontSize,
+    fontWeight: tokens.label?.fontWeight,
+    display: "block",
+    marginBottom: "6px",
+  },
+  modalBox: {
+    background: tokens.modal?.boxBackground,
+    color: tokens.modal?.boxColor,
+    border: `1px solid ${tokens.modal?.boxBorderColor}`,
+    borderRadius: tokens.modal?.borderRadius,
+    boxShadow: tokens.modal?.boxShadow,
+    width: tokens.modal?.width,
+    maxWidth: tokens.modal?.maxWidth,
+    maxHeight: tokens.modal?.maxHeight,
+    padding: tokens.modal?.padding,
+    overflowY: "auto",
+  },
+  modalOverlay: {
+    background: tokens.modal?.overlayBackground,
+    position: "fixed",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  buttonBase: {
+    borderRadius: tokens.button?.borderRadius,
+    padding: tokens.button?.padding,
+    fontWeight: tokens.button?.fontWeight,
+    marginLeft: "10px",
+    cursor: "pointer",
+  },
+  buttonSave: {
+    background: tokens.button?.saveBackground,
+    color: tokens.button?.saveColor,
+  },
+  buttonClose: {
+    background: tokens.button?.closeBackground,
+    color: tokens.button?.closeColor,
+  },
+  tabButton: (isActive) => ({
+    background: isActive
+      ? tokens.tabs?.activeBackground
+      : tokens.tabs?.buttonBackground,
+    color: isActive ? tokens.tabs?.activeColor : tokens.tabs?.buttonColor,
+    marginRight: tokens.tabs?.gap,
+    padding: "8px 12px",
+    border: "none",
+    borderRadius: "6px",
+    cursor: "pointer",
+  }),
+});

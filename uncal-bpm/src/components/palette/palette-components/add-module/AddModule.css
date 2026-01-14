@@ -1,0 +1,158 @@
+/* AddModule.css — scoped only to AddModule via .add-module- prefixes */
+
+/* Overlay gelap di belakang modal AddModule */
+.add-module-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* Kotak modal AddModule */
+.add-module-box {
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 12px;
+  width: 420px;
+  max-width: 92%;
+  color: #f4f4f4;
+  border: 1px solid #d4af37;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  animation: addModuleFadeIn 220ms ease-out;
+}
+
+/* Header */
+.add-module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.add-module-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f39c12; /* accent gold */
+}
+
+/* close (X) */
+.add-module-close {
+  background: transparent;
+  border: none;
+  color: #ddd;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  transition: transform 0.12s ease, color 0.12s ease, background 0.12s ease;
+}
+.add-module-close:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.02);
+  transform: scale(1.05);
+}
+
+/* Body */
+.add-module-body {
+  margin-top: 12px;
+}
+.add-module-label {
+  font-size: 13px;
+  color: #dcdcdc;
+  display: block;
+  margin-bottom: 6px;
+}
+.add-module-file-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #3a3a3a;
+  background: #151515;
+  color: #eee;
+  font-size: 13px;
+}
+
+/* file preview & error */
+.add-module-file-preview {
+  margin: 8px 0 0;
+  color: #cfcfcf;
+  font-size: 13px;
+}
+.add-module-error {
+  margin: 8px 0 0;
+  color: #ff6b6b;
+  font-size: 13px;
+}
+
+/* Actions (buttons) */
+.add-module-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+/* base button style for add-module */
+.add-module-btn {
+  min-width: 110px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+/* Close button variant */
+.add-module-btn-close {
+  background: #3a3a3a;
+  color: #f4f4f4;
+  border: 1px solid #4a4a4a;
+}
+.add-module-btn-close:hover {
+  background: #4a4a4a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Add button variant */
+.add-module-btn-add {
+  background: #d4af37;
+  color: #121212;
+  border: 1px solid #c9a734;
+}
+.add-module-btn-add:hover {
+  background: #c9a734;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(212, 175, 55, 0.16);
+}
+
+/* small input focus effect */
+.add-module-file-input:focus {
+  outline: none;
+  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.08);
+  border-color: rgba(212, 175, 55, 0.7);
+}
+
+/* animation */
+@keyframes addModuleFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.995);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
