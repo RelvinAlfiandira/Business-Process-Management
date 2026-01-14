@@ -1,0 +1,29 @@
+spring.application.name=bpm-backend
+
+# Database Configuration
+spring.datasource.url=jdbc:postgresql://localhost:5432/bpm-db
+spring.datasource.username=postgres
+spring.datasource.password=YOUR_DATABASE_PASSWORD
+
+# JPA/Hibernate Configuration
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.open-in-view=false
+server.port=8080
+
+# Logging
+logging.level.org.springframework.security=DEBUG
+
+# JWT Configuration
+jwt.secret=YOUR_JWT_SECRET_KEY_HERE
+jwt.expiration.ms=86400000
+
+# Email Configuration
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=YOUR_EMAIL@gmail.com
+spring.mail.password=YOUR_EMAIL_APP_PASSWORD
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+spring.mail.properties.mail.smtp.starttls.required=true
